@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN FORM EXAMPLE</title>
+	<STYLE TYPE="text/css">
+		.main-div{
+		
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: linear-gradient(to right,orange,red);
+
+		}
+		.container{
+			height:350px ;
+			width:230px ;
+			background:white ;
+			padding:20px ;
+			padding-top:0px ;
+			border-radius:50px ;
+			box-shadow: 0px 0px 20px grey;
+		}
+		.heading{
+			font-size: 35px;
+			font-family: Arial black;
+			color: royalblue;
+		}
+		input{
+			width: 90%;
+			height: 30px;
+			margin-bottom: 10px;
+			margin-left: 10%;
+			border: none;
+			border-bottom: 3px solid black;
+			outline: none;
+			font-size: 15px;
+		}
+		.lgnbtn{
+			border: none;
+			cursor: pointer;
+			height: 45px;
+			background-color: royalblue;
+			color: white;
+			font-family: Arial black;
+			font-size: 20px;
+			border-radius: 7px;
+		}
+		.lgnbtn:hover{
+			background-color: white;
+			color: royalblue;
+			border: 2px solid royalblue;
+			transform: scale(0.9);
+
+		}
+		.lnk{
+			text-decoration: none;
+			margin-left: 15px;
+			font-family: Arial black;
+			/*color: black;
+			font-family: Arial black;
+			font-size: 13px;
+			margin-left: 19px;*/
+		}
+		.lnk:hover{
+			
+			text-decoration: underline;
+			color: black;
+
+		}
+	</style>
+</head>
+<body><div class="main-div">
+	<div class="container">
+		<h2 align="center"class="heading">login</h2>
+		<div class="form.comp">
+			<form autocomplete ="off">
+				<input type="text"name="username"placeholder="username"required id="un">
+				<input type="text" name="PASSWORD"placeholder="password"required id="pass">
+
+				<p><a href=""class="lnk">FORGET PASSWORD</a></p>
+				<input type="button"name="login"value="LOGIN" class="lgnbtn"onclick="validationform()">
+				<p><a href="#" class="lnk" >CREATE ACCOUNT ?</a></p>
+			</form>
+	</div>
+</div>
+<script type="text/javascript">
+
+let un1="jana123";
+let pass2="jana@123";
+function validationform()
+{
+	let un2=document.getelementById("un").value;
+	let pass2=document.getelementById("pass").value;
+
+}
+</script>
+
+</body>
+</html>
